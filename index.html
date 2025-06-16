@@ -29,41 +29,44 @@
     <script src="js/main.js"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            CulturalHub
-                        </span>
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-900 hover:text-purple-600 transition-colors">Inicio</a>
-                    <a href="avances.html" class="text-gray-700 hover:text-purple-600 transition-colors">Avances</a>
-                    <a href="proyecto.html" class="text-gray-700 hover:text-purple-600 transition-colors">Proyecto</a>
-                </div>
-                <a href="#" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-4 py-2 rounded-lg transition-all">
-                    Comprar Tickets
-                </a>
-                <!-- Mobile menu button -->
-                <button class="md:hidden">
-                    <i class="fas fa-bars text-gray-700"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 py-2 space-y-2">
-                <a href="index.html" class="block py-2 text-gray-900">Inicio</a>
-                <a href="avances.html" class="block py-2 text-gray-700">Avances</a>
-                <a href="proyecto.html" class="block py-2 text-gray-700">Proyecto</a>
-            </div>
-        </div>
-    </nav>
 
+    <header>
+        <!--navegacion-->
+        <nav class="bg-white border-b shadow-sm sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center h-16 gap-6">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    CulturalHub
+                    </span>
+                </a>
+
+                <!-- Enlaces de navegación -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-black hover:text-purple-600 transition-colors">Inicio</a>
+                    <a href="avances.html" class="text-black hover:text-purple-600 transition-colors">Avances</a>
+                    <a href="proyecto.html" class="text-black hover:text-purple-600 transition-colors">Proyecto</a>
+                </div>
+
+                <!-- Botón menú móvil -->
+                <button id="mobile-menu-toggle" class="md:hidden ml-auto">
+                    <i class="fas fa-bars text-gray-700 text-xl"></i>
+                </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+                <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-black">Inicio</a>
+                <a href="avances.html" class="block py-2 text-black">Avances</a>
+                <a href="proyecto.html" class="block py-2 text-black">Proyecto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
     <!-- Hero Section -->
     <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-pink-800 text-white">
         <div class="absolute inset-0 bg-black/20"></div>
@@ -84,14 +87,6 @@
                         Un espacio diseñado para jóvenes donde el arte, la música y la cultura se encuentran.
                         Exposiciones, talleres, recitales y mucho más.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#" class="bg-white text-purple-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors text-center">
-                            Ver Eventos
-                        </a>
-                        <a href="#" class="border border-white text-white hover:bg-white hover:text-purple-900 px-6 py-3 rounded-lg font-medium transition-colors text-center">
-                            Explorar Talleres
-                        </a>
-                    </div>
                 </div>
                 <div class="relative order-1 lg:order-2">
                     <div class="aspect-square rounded-3xl p-8 transform rotate-3 hover:rotate-6 transition-transform duration-300 overflow-hidden">
@@ -106,13 +101,14 @@
      <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Grupo 12 - B</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Grupo 12</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Desarrollo Web - Integrantes del Grupo
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-xl border border-transparent hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-300">
                     <div class="text-center">
                         <h3 class="text-xl font-semibold mb-2">Tomas Bialobroda</h3>
                         <a href="https://bialotomas.github.io/UVA2/index.html" target="_blank" class="text-purple-600 hover:text-purple-700 transition-colors">
@@ -120,58 +116,69 @@
                         </a>
                     </div>
                 </div>
-                
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-xl border border-transparent hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">Julián Gallo</h3>
+                        <a href="https://julgallo1.github.io/DyDweb_2-parcial_gallojulian/" class="text-purple-600 hover:text-purple-700 transition-colors">
+                            Ver Portafolio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-xl border border-transparent hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">Gennaro Ferreyra Mansutti </h3>
+                        <a href="#" class="text-purple-600 hover:text-purple-700 transition-colors">
+                            Ver Portafolio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-xl border border-transparent hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">Sebastian Tadeo Avila</h3>
+                        <a href="#" class="text-purple-600 hover:text-purple-700 transition-colors">
+                            Ver Portafolio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="bg-white p-6 rounded-xl border border-transparent hover:border-purple-500 shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold mb-2">Agustina Alejandra Martin</h3>
+                        <a href="#" class="text-purple-600 hover:text-purple-700 transition-colors">
+                            Ver Portafolio <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="mb-4">
-                        <span class="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                            CulturalHub
-                        </span>
-                    </div>
-                    <p class="text-gray-400">El centro cultural más vibrante para jóvenes creativos</p>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Navegación</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="eventos.html" class="hover:text-white transition-colors">Eventos</a></li>
-                        <li><a href="talleres.html" class="hover:text-white transition-colors">Talleres</a></li>
-                        <li><a href="galeria.html" class="hover:text-white transition-colors">Galería</a></li>
-                        <li><a href="tickets.html" class="hover:text-white transition-colors">Tickets</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Información</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="sobre-nosotros.html" class="hover:text-white transition-colors">Sobre Nosotros</a></li>
-                        <li><a href="contacto.html" class="hover:text-white transition-colors">Contacto</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Accesibilidad</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">FAQ</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold mb-4">Contacto</h3>
-                    <div class="space-y-2 text-gray-400">
-                        <p>Av. Cultura 123</p>
-                        <p>Centro Histórico, CDMX</p>
-                        <p>Tel: (55) 1234-5678</p>
-                        <p>info@culturalhub.mx</p>
-                    </div>
-                </div>
+
+            <div class="text-center">
+            <div class="mb-4">
+                <span class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"><a href="./index.html">
+                CulturalHub</a>
+                </span>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 CulturalHub. Todos los derechos reservados.</p>
+            <p class="text-gray-400 mb-8">
+                El centro cultural más vibrante para jóvenes creativos
+            </p>
             </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 CulturalHub. Todos los derechos reservados.</p>
+            </div>
+
         </div>
     </footer>
+
 
 </body>
 </html>
